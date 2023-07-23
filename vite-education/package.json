@@ -1,0 +1,30 @@
+{
+  "name": "vite-education",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "docs:deploy": "npm run docs:build && gh-pages -d docs/.vitepress/dist"
+  },
+  "author": "Carlos Díaz Calzadilla",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/okta-vue": "1.1",
+    "firebase": "^9.15.0",
+    "fs": "^0.0.1-security",
+    "gh-pages": "^4.0.0",
+    "nodemon": "^2.0.20",
+    "recursive-readdir": "^2.2.3",
+    "tree-parser": "^1.2.4",
+    "vitepress": "^1.0.0-alpha.26",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "markdown-it-include": "^2.0.0",
+    "vitepress-plugin-tabs": "^0.2.0"
+  }
+}
